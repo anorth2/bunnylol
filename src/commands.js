@@ -177,8 +177,8 @@ export const COMMANDS: {[CommandNames] : CommandType} = {
         url: "https://app.plex.tv/desktop/#!/"
     },
     DEFAULT: {
-        name: "Default - Google Search",
-        url: "https://google.com/",
-        searchurl: "https://www.google.com/search?q="
+        name: "Default - Perplexity.ai",
+        url: "https://www.perplexity.ai/",
+        searchurl: "https://www.perplexity.ai/?q="
     }
 };
