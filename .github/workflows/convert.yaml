@@ -1,8 +1,10 @@
 name: Convert BunnyLOL JavaScript files for Browser
 on:
+  workflow_dispatch:
   push:
     branches:
         - master
+  
 
 jobs:
     build:
