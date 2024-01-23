@@ -6,8 +6,8 @@ export type CommandType = {|
     searchurl?: string,
 |};
 
-export type CommandNames = 'fb' | 'm' | 'mw' | 'wa' | 'waw' | 'gm' | 'sis' | 'col' | 'yt' | 'tv' | 'gh' | 'r' | 'l' | 'me' | 'ig' | 'tw' | 'tr' | 'vs' | 'todo' |
-                           'c' | 'wf' | '$' | 'cal' | 'uvacovid' | 'hs' | 'p' | 'n' | 'h' | 'pv' | 'gd' | 'wp' | 'wsj' | 'cnn' | 'wiki' | 'g' | 'plex' | 'DEFAULT';
+export type CommandNames = 'fb' | 'm' | 'mw' | 'wa' | 'waw' | 'gm' | 'yt' | 'tv' | 'gh' | 'r' | 'l' | 'me' | 'ig' | 't' | 'vs' |
+                           'c' | 'cal' | 'p' | 'n' | 'h' | 'pv' | 'gd' | 'wp' | 'wsj' | 'cnn' | 'wiki' | 'g' | 'plex' | 'DEFAULT';
 
 export type CommandDataTableType = {|
     name: string, 
@@ -52,22 +52,10 @@ export const COMMANDS: {[CommandNames] : CommandType} = {
         url: "https://drive.google.com/drive/u/0",
         searchurl: "https://drive.google.com/drive/u/"
     },
-    sis: {
-        name: "UVA SIS",
-        url: "https://sisuva.admin.virginia.edu/psc/ihprd/UVSS/SA/s/WEBLIB_HCX_GN.H_SPRINGBOARD.FieldFormula.IScript_Main",
-    },
-    col: {
-        name: "UVA Collab",
-        url: "https://collab.its.virginia.edu/portal",
-    },
     yt: {
         name: "YouTube",
         url: "https://youtube.com/",
         searchurl: "https://www.youtube.com/results?search_query="
-    },
-    tv: {
-        name: "YouTube TV",
-        url: "https://tv.youtube.com/",
     },
     gh: {
         name: "GitHub",
@@ -88,10 +76,10 @@ export const COMMANDS: {[CommandNames] : CommandType} = {
         url: "https://instagram.com/",
         searchurl: "https://instagram.com/"
     },
-    tw: {
-        name: "Twitter",
-        url: "https://twitter.com/",
-        searchurl: "https://twitter.com/search?q="
+    t: {
+        name: "Threads",
+        url: "https://threads.net/",
+        searchurl: "https://www.threads.net/search/?q="
     },
     g: {
         name: "Google",
@@ -109,10 +97,6 @@ export const COMMANDS: {[CommandNames] : CommandType} = {
     cnn: {
         name: "CNN",
         url: "https://www.cnn.com/"
-    },
-    tr: {
-        name: "HooHacks Trello Board",
-        url: "https://trello.com/b/GjKhtVPK/hoohacks"
     },
     n: {
         name: "Netflix",
@@ -132,23 +116,13 @@ export const COMMANDS: {[CommandNames] : CommandType} = {
         name: "VS Code",
         url: "vscode://",
     },
-    wf: {
-        name: "Webflow",
-        url: "https://webflow.com/design/hoohacks"
-    },
-    hs: {
-        name: "Hubspot",
-        url: "https://app.hubspot.com/"
-    },
-    $: {
-        name: "Robinhood",
-        url: "https://robinhood.com/", 
-        searchurl: "https://robinhood.com/stocks/"
+    ynab: {
+        name: "You Need A Budget",
+        url: "https://app.ynab.com/" 
     },
     c: {
-        name: "Robinhood Crypto",
-        url: "https://robinhood.com/", 
-        searchurl: "https://robinhood.com/crypto/"
+        name: "Coinbase",
+        url: "https://coinbase.com/" 
     },
     cal: {
         name: "Google Calendar",
@@ -162,10 +136,6 @@ export const COMMANDS: {[CommandNames] : CommandType} = {
         name: "Wikipedia",
         url: "https://en.wikipedia.org",
         searchurl: "https://en.wikipedia.org/wiki/"
-    },
-    todo: {
-        name: "Microsoft To Do",
-        url: "https://to-do.live.com"
     },
     p: {
         name: "Perplexity.ai",
