@@ -169,7 +169,8 @@ export const COMMANDS: {[CommandNames] : CommandType} = {
     },
     p: {
         name: "Perplexity.ai",
-        url: "https://www.perplexity.ai/?q="
+        url: "https://www.perplexity.ai/",
+        searchurl: "https://www.perplexity.ai/?q="
     },
     plex: {
         name: "Plex",
