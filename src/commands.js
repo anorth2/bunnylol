@@ -7,7 +7,7 @@ export type CommandType = {|
 |};
 
 export type CommandNames = 'fb' | 'm' | 'mw' | 'wa' | 'waw' | 'gm' | 'sis' | 'col' | 'yt' | 'tv' | 'gh' | 'r' | 'l' | 'me' | 'ig' | 'tw' | 'tr' | 'vs' | 'todo' |
-                           'c' | 'wf' | '$' | 'cal' | 'uvacovid' | 'hs' | 'p' | 'n' | 'h' | 'pv' | 'gd' | 'wp' | 'wsj' | 'cnn' | 'wiki' | 'g' | 'DEFAULT';
+                           'c' | 'wf' | '$' | 'cal' | 'uvacovid' | 'hs' | 'p' | 'n' | 'h' | 'pv' | 'gd' | 'wp' | 'wsj' | 'cnn' | 'wiki' | 'g' | 'plex' | 'DEFAULT';
 
 export type CommandDataTableType = {|
     name: string, 
@@ -93,10 +93,6 @@ export const COMMANDS: {[CommandNames] : CommandType} = {
         url: "https://twitter.com/",
         searchurl: "https://twitter.com/search?q="
     },
-    me: {
-        name: "Rithik.me - Personal Website",
-        url: "https://rithik.me/me",
-    },
     g: {
         name: "Google",
         url: "https://google.com/",
@@ -131,10 +127,6 @@ export const COMMANDS: {[CommandNames] : CommandType} = {
         name: "Amazon Prime Video",
         url: "https://www.amazon.com/Amazon-Video/b/?&node=2858778011&ref=dvm_MLP_ROWNA_US_1",
         searchurl: "https://www.amazon.com/s?i=instant-video&ref=nb_sb_noss_2&k="
-    },
-    p: {
-        name: "Piazza",
-        url: "https://piazza.com/class"
     },
     vs: {
         name: "VS Code",
@@ -174,6 +166,14 @@ export const COMMANDS: {[CommandNames] : CommandType} = {
     todo: {
         name: "Microsoft To Do",
         url: "https://to-do.live.com"
+    },
+    p: {
+        name: "Perplexity.ai",
+        url: "https://www.perplexity.ai/?q="
+    },
+    plex: {
+        name: "Plex",
+        url: "https://app.plex.tv/desktop/#!/"
     },
     DEFAULT: {
         name: "Default - Google Search",
