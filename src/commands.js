@@ -7,7 +7,7 @@ export type CommandType = {|
 |};
 
 export type CommandNames = 'fb' | 'm' | 'mw' | 'wa' | 'waw' | 'gm' | 'yt' | 'tv' | 'gh' | 'r' | 'l' | 'me' | 'ig' | 't' | 'vs' |
-                           'c' | 'cal' | 'p' | 'n' | 'h' | 'pv' | 'gd' | 'wp' | 'wsj' | 'cnn' | 'wiki' | 'g' | 'plex' | 'DEFAULT';
+                           'c' | 'cal' | 'p' | 'n' | 'h' | 'pv' | 'gd' | 'wp' | 'wsj' | 'cnn' | 'wiki' | 'g' | 'plex' | 'am' | 'DEFAULT';
 
 export type CommandDataTableType = {|
     name: string, 
