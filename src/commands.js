@@ -146,6 +146,11 @@ export const COMMANDS: {[CommandNames] : CommandType} = {
         name: "Plex",
         url: "https://app.plex.tv/desktop/#!/"
     },
+    am: {
+        name: "Amazon",
+        url: "https://www.amazon.com/",
+        searchurl: "https://www.amazon.com/s?k="
+    },
     DEFAULT: {
         name: "Default - Perplexity.ai",
         url: "https://www.perplexity.ai/",
