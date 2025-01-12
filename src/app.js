@@ -70,7 +70,7 @@ switch (currCmd) {
       .then((done: boolean) => {
         if (!done && COMMANDS.DEFAULT.searchurl) {
           redirect(
-            `${COMMANDS.DEFAULT.searchurl}${encodeURIComponent(currCmd)}`
+            `${COMMANDS.DEFAULT.searchurl}${encodeURIComponent(currCmd)}&hints=search`
           );
         }
       })
