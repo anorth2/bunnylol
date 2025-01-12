@@ -152,8 +152,8 @@ export const COMMANDS: {[CommandNames] : CommandType} = {
         searchurl: "https://www.amazon.com/s?k="
     },
     DEFAULT: {
-        name: "Default - ChatGPT",
+        name: "chatgpt",
         url: "https://chatgpt.com/",
-        searchurl: "https://chatgpt.com/?q=%s&hints=search"
+        searchurl: "https://chatgpt.com/?q="
     }
 };
