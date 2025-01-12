@@ -35,6 +35,14 @@ const bunnylol: (string) => Promise<boolean> = async function (
       }
       if (command.searchurl && arr.length !== 1) {
         const searchParam = prefix !== "$" ? prefix.length + 1 : prefix.length;
+        if (command.name == "chatgpt") {
+          await redirect(
+            `${command.searchurl}${encodeURIComponent(
+              currCmd.substr(searchParam)
+            )}&hints=search`
+          );
+          return true;
+        }
         await redirect(
           `${command.searchurl}${encodeURIComponent(
             currCmd.substr(searchParam)
