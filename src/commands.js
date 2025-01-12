@@ -129,7 +129,7 @@ export const COMMANDS: {[CommandNames] : CommandType} = {
         url: "https://calendar.google.com/calendar/r"
     },
     uvacovid: {
-        name: "UVA COVID-19 Tracker",
+        name: "UVA COVID-19",
         url: "https://returntogrounds.virginia.edu/covid-tracker"
     },
     wiki: {
