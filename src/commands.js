@@ -152,8 +152,8 @@ export const COMMANDS: {[CommandNames] : CommandType} = {
         searchurl: "https://www.amazon.com/s?k="
     },
     DEFAULT: {
-        name: "Default - Perplexity.ai",
-        url: "https://www.perplexity.ai/",
-        searchurl: "https://www.perplexity.ai/?q="
+        name: "Default - ChatGPT",
+        url: "https://chatgpt.com/",
+        searchurl: "https://chatgpt.com/?q=%s&hints=search"
     }
 };
